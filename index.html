@@ -12,8 +12,7 @@
         <div>
             <nav>
                 <ul>
-                    <li><a href="./pages/block.html">Display Block</a></li>
-                    <li><a href="./pages/inline.html">Display Inline</a></li>
+                    <li><a href="./pages/block.html">Display Block e Inline</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,6 +21,10 @@
 
 
     <main>
+        <h2>REGRA DA CASCATA</h2>
+        <P>
+            A regra da cascata no CSS funciona como um mecanismo para resolver conflitos de estilo, definindo uma ordem de prioridade para aplicar regras de CSS. Em caso de regras conflitantes para o mesmo elemento, o navegador determina qual deve ser a propriedade a ser aplicada com base em uma hierarquia de origem (como estilos do navegador, do desenvolvedor ou do próprio usuário), importância (!important), especificidade do seletor e, por fim, a ordem de declaração das regras. 
+        </P>
         <p>
             CASCATA, ESPECIFICIDADE e COMBINADORES são conceitos fundamentais no CSS que determinam como os estilos são aplicados aos elementos HTML, especialmente quando há conflitos entre regras. A Cascata define a prioridade de aplicação das regras, levando em conta a origem, importância e a ordem em que as regras são declaradas. A Especificidade é um algoritmo que atribui pontos aos seletores, determinando qual regra tem mais "poder" para ser aplicada quando múltiplas regras se aplicam ao mesmo elemento. Os Combinadores são símbolos que definem relações entre os seletores, permitindo estilos mais direcionados ao combinar seletores de diferentes elementos para especificar relações de descendência, filiação ou irmandade. 
         </p>
@@ -42,6 +45,15 @@
             As pseudo-classes CSS selecionam elementos com base no seu estado, mas first-child, last-child, nth-child e nth-of-type focam na posição do elemento entre os seus irmãos. :first-child e :last-child selecionam o primeiro e o último filho, respetivamente, enquanto :nth-child() e :nth-of-type() oferecem um controlo mais detalhado sobre a posição, com a diferença crucial de que :nth-child() conta todos os irmãos, e :nth-of-type() conta apenas os irmãos do mesmo tipo de elemento. 
         </p>
 
+        <h2>Combinação</h2>
+
+        <p>Explique a combinação de seletores, mostrando a combinação com espaço .primeiro h1, a combinação de filho .primeira > h1, a combinação de soma .primeira h1 + h1.</p>
+
+        <h2>Box-Sizing</h2>
+
+        <p>
+            A propriedade box-sizing: border-box no CSS altera a forma como as dimensões de um elemento são calculadas, fazendo com que o padding e a borda sejam incluídos dentro do width e height definidos, em vez de serem adicionados externamente. Isso significa que um elemento com width de 150px e border-box terá 150px de largura, mesmo que tenha um padding ou borda. 
+        </p>
     </section>
 </body>
 </html>
