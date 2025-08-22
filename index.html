@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASCATA, ESPECIFICIDADE e COMBINADORES</title>
+</head>
+<body>
+    <header>
+        <h1 id="primeiro-h1">CASCATA, ESPECIFICIDADE e COMBINADORES</h1>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./pages/block.html">Display Block</a></li>
+                    <li><a href="./pages/inline.html">Display Inline</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+
+    <main>
+        <p>
+            CASCATA, ESPECIFICIDADE e COMBINADORES são conceitos fundamentais no CSS que determinam como os estilos são aplicados aos elementos HTML, especialmente quando há conflitos entre regras. A Cascata define a prioridade de aplicação das regras, levando em conta a origem, importância e a ordem em que as regras são declaradas. A Especificidade é um algoritmo que atribui pontos aos seletores, determinando qual regra tem mais "poder" para ser aplicada quando múltiplas regras se aplicam ao mesmo elemento. Os Combinadores são símbolos que definem relações entre os seletores, permitindo estilos mais direcionados ao combinar seletores de diferentes elementos para especificar relações de descendência, filiação ou irmandade. 
+        </p>
+    </main>
+
+    <section>
+        <h2>Funcionamento de Valores do CSS e Propriedades</h2>
+
+        <p>As propriedades margin, padding e border definem espaços, sendo padding o espaço interno entre o conteúdo e a borda, margin o espaço externo entre o elemento e os outros. Border é o limite visual do elemento. A notação de shorthand permite definir esses espaços em uma única propriedade, usando de um a quatro valores para margin e padding na ordem de cima, direita, baixo, esquerda (sentido horário). Existem também sufixos como top, bottom, left, right para aplicar valores a lados específicos e sufixos como block e inline que definem o comportamento do elemento, embora margin e padding não os usem diretamente, mas sim as propriedades direcionais. </p>
+
+        <p>
+            A especificidade CSS é um sistema de "poder de escolha" que determina qual regra de estilo é aplicada quando há conflitos entre várias declarações para o mesmo elemento, usando uma pontuação baseada no tipo de seletor. Seletores de ID têm maior especificidade que os de classe, que têm mais que os de elemento. A pontuação é calculada em três ou quatro partes (por exemplo, 1,0,0 para um ID, 0,1,0 para uma classe, 0,0,1 para um elemento), onde valores maiores numa parte (como a dos IDs) sobrepõem automaticamente valores menores. 
+        </p>
+
+        <h2>Pseudo-Classes</h2>
+
+        <p>
+            As pseudo-classes CSS selecionam elementos com base no seu estado, mas first-child, last-child, nth-child e nth-of-type focam na posição do elemento entre os seus irmãos. :first-child e :last-child selecionam o primeiro e o último filho, respetivamente, enquanto :nth-child() e :nth-of-type() oferecem um controlo mais detalhado sobre a posição, com a diferença crucial de que :nth-child() conta todos os irmãos, e :nth-of-type() conta apenas os irmãos do mesmo tipo de elemento. 
+        </p>
+
+    </section>
+</body>
+</html>
