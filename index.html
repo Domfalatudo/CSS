@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>CASCATA, ESPECIFICIDADE e COMBINADORES</title>
 </head>
 <body>
@@ -19,33 +23,38 @@
         
     </header>
 
-
+<div id="main-e-section">
     <main>
-        <h2>REGRA DA CASCATA</h2>
+        <h2 id="rule-cascate">REGRA DA CASCATA</h2>
         <P>
             A regra da cascata no CSS funciona como um mecanismo para resolver conflitos de estilo, definindo uma ordem de prioridade para aplicar regras de CSS. Em caso de regras conflitantes para o mesmo elemento, o navegador determina qual deve ser a propriedade a ser aplicada com base em uma hierarquia de origem (como estilos do navegador, do desenvolvedor ou do próprio usuário), importância (!important), especificidade do seletor e, por fim, a ordem de declaração das regras. 
         </P>
+
+        <h2>Explicação Central</h2>
+
         <p>
             CASCATA, ESPECIFICIDADE e COMBINADORES são conceitos fundamentais no CSS que determinam como os estilos são aplicados aos elementos HTML, especialmente quando há conflitos entre regras. A Cascata define a prioridade de aplicação das regras, levando em conta a origem, importância e a ordem em que as regras são declaradas. A Especificidade é um algoritmo que atribui pontos aos seletores, determinando qual regra tem mais "poder" para ser aplicada quando múltiplas regras se aplicam ao mesmo elemento. Os Combinadores são símbolos que definem relações entre os seletores, permitindo estilos mais direcionados ao combinar seletores de diferentes elementos para especificar relações de descendência, filiação ou irmandade. 
         </p>
     </main>
 
-    <section>
+    <section id="primeira-section">
         <h2>Funcionamento de Valores do CSS e Propriedades</h2>
 
         <p>As propriedades margin, padding e border definem espaços, sendo padding o espaço interno entre o conteúdo e a borda, margin o espaço externo entre o elemento e os outros. Border é o limite visual do elemento. A notação de shorthand permite definir esses espaços em uma única propriedade, usando de um a quatro valores para margin e padding na ordem de cima, direita, baixo, esquerda (sentido horário). Existem também sufixos como top, bottom, left, right para aplicar valores a lados específicos e sufixos como block e inline que definem o comportamento do elemento, embora margin e padding não os usem diretamente, mas sim as propriedades direcionais. </p>
+
+        <h2>Especifidade</h2>
 
         <p>
             A especificidade CSS é um sistema de "poder de escolha" que determina qual regra de estilo é aplicada quando há conflitos entre várias declarações para o mesmo elemento, usando uma pontuação baseada no tipo de seletor. Seletores de ID têm maior especificidade que os de classe, que têm mais que os de elemento. A pontuação é calculada em três ou quatro partes (por exemplo, 1,0,0 para um ID, 0,1,0 para uma classe, 0,0,1 para um elemento), onde valores maiores numa parte (como a dos IDs) sobrepõem automaticamente valores menores. 
         </p>
 
-        <h2>Pseudo-Classes</h2>
+        <h2 id="pseudo-classes">Pseudo-Classes</h2>
 
         <p>
             As pseudo-classes CSS selecionam elementos com base no seu estado, mas first-child, last-child, nth-child e nth-of-type focam na posição do elemento entre os seus irmãos. :first-child e :last-child selecionam o primeiro e o último filho, respetivamente, enquanto :nth-child() e :nth-of-type() oferecem um controlo mais detalhado sobre a posição, com a diferença crucial de que :nth-child() conta todos os irmãos, e :nth-of-type() conta apenas os irmãos do mesmo tipo de elemento. 
         </p>
 
-        <h2>Combinação</h2>
+        <h2 id="combination">Combinação</h2>
 
         <p>Explique a combinação de seletores, mostrando a combinação com espaço .primeiro h1, a combinação de filho .primeira > h1, a combinação de soma .primeira h1 + h1.</p>
 
@@ -55,5 +64,6 @@
             A propriedade box-sizing: border-box no CSS altera a forma como as dimensões de um elemento são calculadas, fazendo com que o padding e a borda sejam incluídos dentro do width e height definidos, em vez de serem adicionados externamente. Isso significa que um elemento com width de 150px e border-box terá 150px de largura, mesmo que tenha um padding ou borda. 
         </p>
     </section>
+</div>
 </body>
 </html>
