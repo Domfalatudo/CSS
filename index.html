@@ -30,21 +30,13 @@
                 </ul>
             </nav>
         </div>
-        
-        <ul id="listas">
-            <h2>Algumas informações importantes</h2>
-                <li>Espaço (descendente): seleciona todos os elementos que estão dentro de outro, em qualquer nível da hierarquia. Exemplo: .menu li afeta todos os "li" que estejam dentro de .menu, mesmo que haja outras tags no meio. É útil quando queremos aplicar estilo a elementos internos sem precisar usar várias classes.</li>
-                <li>Filho direto (>): seleciona apenas os elementos que são filhos imediatos do seletor anterior. Exemplo: .menu > li afeta apenas os "li" que estão logo abaixo de .menu, ignorando os que estão dentro de sublistas. Esse combinador ajuda a manter mais controle quando há estruturas aninhadas.</li>
-                <li>Irmão adjacente (+): seleciona o elemento que vem imediatamente depois de outro. Exemplo: h1 + p aplica estilo apenas ao parágrafo que vem logo depois do "h1".</li>
-                <li>Irmão geral (~): seleciona todos os elementos irmãos que aparecem depois de outro. Exemplo: h1 ~ p afeta todos os parágrafos que aparecem depois do "h1", não apenas o primeiro.</li>
-                <li>Soma (vírgula ,): permite aplicar o mesmo estilo a vários seletores diferentes ao mesmo tempo. Exemplo: h1, h2, h3 aplica a mesma regra a todos esses elementos sem precisar repetir o código.</li>
-        </ul>
+
 
     </header>
 
 <div id="main-e-section">
     <main>
-        <h2 id="rule-cascate">REGRA DA CASCATA</h2>
+        <h2 id="rule-cascate">Regra da Cascata</h2>
         <P>
             A regra da cascata no CSS funciona como um mecanismo para resolver conflitos de estilo, definindo uma ordem de prioridade para aplicar regras de CSS. Em caso de regras conflitantes para o mesmo elemento, o navegador determina qual deve ser a propriedade a ser aplicada com base em uma hierarquia de origem (como estilos do navegador, do desenvolvedor ou do próprio usuário), importância (!important), especificidade do seletor e, por fim, a ordem de declaração das regras. 
         </P>
@@ -75,7 +67,7 @@
 
         <h2 id="combination">Combinação</h2>
 
-        <p>A combinação de seletores no CSS permite definir estilos de forma mais precisa. Quando usamos o espaço, como em .primeiro h1, o estilo será aplicado a todos os elementos <h1> que estiverem dentro de um elemento com a classe .primeiro, independentemente da profundidade. Já a combinação com o sinal de maior >, como em .primeira > h1, seleciona apenas os elementos <h1> que são filhos diretos de .primeira. Por fim, a combinação com vírgula, como em .primeira h1, h1, permite aplicar a mesma regra a mais de um seletor ao mesmo tempo, ou seja, tanto aos <h1> que estão dentro de .primeira quanto a todos os <h1> da página.</p>
+        <p>A combinação de seletores no CSS permite definir estilos de forma mais precisa. Quando usamos o espaço, como em .primeiro h1, o estilo será aplicado a todos os elementos "h1" que estiverem dentro de um elemento com a classe .primeiro, independentemente da profundidade. Já a combinação com o sinal de maior >, como em .primeira > h1, seleciona apenas os elementos "h1" que são filhos diretos de .primeira. Por fim, a combinação com vírgula, como em .primeira h1, h1, permite aplicar a mesma regra a mais de um seletor ao mesmo tempo, ou seja, tanto aos "h1" que estão dentro de .primeira quanto a todos os "h1" da página.</p>
 
         <h2>Box-Sizing</h2>
 
@@ -85,6 +77,18 @@
 
         <img src="./images/Foto 2.webp" alt="Imagem relacinada as propriedades de dimensões de uma página web">
     </section>
+
+    <hr>
+    
+    <h2 id="info">Informações importantes</h2>
+    
+    <ul id="listas">
+                <li>Espaço (descendente): seleciona todos os elementos que estão dentro de outro, em qualquer nível da hierarquia. Exemplo: .menu li afeta todos os "li" que estejam dentro de .menu, mesmo que haja outras tags no meio. É útil quando queremos aplicar estilo a elementos internos sem precisar usar várias classes.</li>
+                <li>Filho direto (>): seleciona apenas os elementos que são filhos imediatos do seletor anterior. Exemplo: .menu > li afeta apenas os "li" que estão logo abaixo de .menu, ignorando os que estão dentro de sublistas. Esse combinador ajuda a manter mais controle quando há estruturas aninhadas.</li>
+                <li>Irmão adjacente (+): seleciona o elemento que vem imediatamente depois de outro. Exemplo: h1 + p aplica estilo apenas ao parágrafo que vem logo depois do "h1".</li>
+                <li>Irmão geral (~): seleciona todos os elementos irmãos que aparecem depois de outro. Exemplo: h1 ~ p afeta todos os parágrafos que aparecem depois do "h1", não apenas o primeiro.</li>
+                <li>Soma (vírgula ,): permite aplicar o mesmo estilo a vários seletores diferentes ao mesmo tempo. Exemplo: h1, h2, h3 aplica a mesma regra a todos esses elementos sem precisar repetir o código.</li>
+    </ul>
 </div>
 </body>
 </html>

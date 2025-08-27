@@ -72,3 +72,18 @@ p {
     font-size: 15px;
 }
 
+#listas {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    font-size: 9px;
+}
+
+#info {
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+#page, h1{
+    color: white;
+}
