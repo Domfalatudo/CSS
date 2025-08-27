@@ -32,9 +32,12 @@
         </div>
         
         <ul id="listas">
-            <li></li>
-            <li></li>
-            <li></li>
+            <h2>Algumas informações importantes</h2>
+                <li>Espaço (descendente): seleciona todos os elementos que estão dentro de outro, em qualquer nível da hierarquia. Exemplo: .menu li afeta todos os "li" que estejam dentro de .menu, mesmo que haja outras tags no meio. É útil quando queremos aplicar estilo a elementos internos sem precisar usar várias classes.</li>
+                <li>Filho direto (>): seleciona apenas os elementos que são filhos imediatos do seletor anterior. Exemplo: .menu > li afeta apenas os "li" que estão logo abaixo de .menu, ignorando os que estão dentro de sublistas. Esse combinador ajuda a manter mais controle quando há estruturas aninhadas.</li>
+                <li>Irmão adjacente (+): seleciona o elemento que vem imediatamente depois de outro. Exemplo: h1 + p aplica estilo apenas ao parágrafo que vem logo depois do "h1".</li>
+                <li>Irmão geral (~): seleciona todos os elementos irmãos que aparecem depois de outro. Exemplo: h1 ~ p afeta todos os parágrafos que aparecem depois do "h1", não apenas o primeiro.</li>
+                <li>Soma (vírgula ,): permite aplicar o mesmo estilo a vários seletores diferentes ao mesmo tempo. Exemplo: h1, h2, h3 aplica a mesma regra a todos esses elementos sem precisar repetir o código.</li>
         </ul>
 
     </header>
